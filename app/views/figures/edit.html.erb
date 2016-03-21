@@ -28,3 +28,7 @@
 
   <%= f.submit "Edit #{@figure.name}"%>
 <% end %>
+
+<h2>Delete <%= @figure.name%>?</h2>
+
+<%= button_to "Delete #{@figure.name}", @figure, method: :delete, class: "delete" %>

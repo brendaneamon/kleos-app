@@ -18,3 +18,5 @@
 <% end %>
 
 <h2>Delete <%= @home.name%>?</h2>
+
+<%= button_to "Delete #{@home.name}", @home, method: :delete, class: "delete" %>
