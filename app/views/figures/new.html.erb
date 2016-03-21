@@ -26,5 +26,8 @@
   <%= f.label :allegiance %>
   <%= f.text_field :allegiance %>
 
+  <%= f.label :home_id, "Select a home for this new figure." %>
+  <%= f.collection_select :home_id, Home.all, :id, :name %>
+
   <%= f.submit "Create New Figure"%>
 <% end %>

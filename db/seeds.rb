@@ -13,10 +13,12 @@ olympus = Home.create(name:"Olympus", greek_name:"Ὄλυμπος", description:
 phthia = Home.create(name:"Phthia", greek_name:"Φθία", description:"Homeland of the Myrmidons", img_url:"")
 pylos = Home.create(name:"Pylos", greek_name:"Πύλος", description:"Home of Nestor", img_url:"")
 troy = Home.create(name:"Troy", greek_name:"Τροία ἤ Ἴλιον", description:"Home of the Trojans, also known as Ilium", img_url:"")
+sparta = Home.create(name:"Sparta", greek_name:"Σπάρτα ἤ Λακεδαίμων", description:"City from which Helen was abducted by Paris", img_url:"")
 
 
-achilles = Figure.create(name:"Achilles", greek_name:"Ἀχιλλεύς", epithets:"swift-footed, godlike, lion-hearted", description:"Best of the Achaeans", is_mortal:true, img_url:"", home:phthia, allegiance:"Greeks")
-zeus = Figure.create(name:"Zeus", greek_name:"Ζεύς", epithets:"cloud-gatherer, wide-seeing, Aegis-holding", description:"King of the gods", is_mortal:false, img_url:"", home:olympus, allegiance:"Neutral")
-nestor = Figure.create(name:"Nestor", greek_name:"Νέστωρ Γερήνιος", epithets:"son of Neleus, Gerenian charioteer",
+Figure.create(name:"Achilles", greek_name:"Ἀχιλλεύς", epithets:"swift-footed, godlike, lion-hearted", description:"Best of the Achaeans", is_mortal:true, img_url:"", home:phthia, allegiance:"Greeks")
+Figure.create(name:"Zeus", greek_name:"Ζεύς", epithets:"cloud-gatherer, wide-seeing, Aegis-holding", description:"King of the gods", is_mortal:false, img_url:"", home:olympus, allegiance:"Neutral")
+Figure.create(name:"Nestor", greek_name:"Νέστωρ Γερήνιος", epithets:"son of Neleus, Gerenian charioteer",
 description:"King of Pylos", is_mortal:true, img_url:"", home:pylos, allegiance:"Greeks")
-hector = Figure.create(name:"Hector", greek_name:"Ἕκτωρ", epithets:"man-killing, horse-taming", description:"Greatest champion of the Trojans", is_mortal: true, img_url:"", home:troy, allegiance:"Trojans")
+Figure.create(name:"Hector", greek_name:"Ἕκτωρ", epithets:"man-killing, horse-taming", description:"Greatest champion of the Trojans", is_mortal: true, img_url:"", home:troy, allegiance:"Trojans")
+Figure.create(name:"Menelaus", greek_name:"Μενέλαος", epithets:"war-like, red-haired", description:"King of the Lacedaimonians and husband of Helen", is_mortal: true, img_url:"", home:sparta, allegiance:"Greeks")
