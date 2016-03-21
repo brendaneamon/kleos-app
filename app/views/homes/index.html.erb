@@ -2,7 +2,7 @@
 
 <% @homes.each do |home| %>
   <div class="home">
-    <h3><%= home.name %></h3>
+    <h3><%= link_to home.name, home %></h3>
     <p><%= home.greek_name %></p>
   </div>
 <% end %>

@@ -1,1 +1,30 @@
-<h2>Edit a Figure</h2>
+<h2>Edit <%= @figure.name %></h2>
+
+<%= form_for @figure do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :greek_name %>
+  <%= f.text_field :greek_name %>
+
+  <%= f.label :epithets %>
+  <%= f.text_area :epithets %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :is_mortal, "Is the character mortal?"%><br />
+  <%= f.label :is_mortal, "Yes", :value => "true"  %>
+  <%= f.radio_button :is_mortal, true %>
+  <%= f.label :is_mortal, "No", :value => "false" %>
+  <%= f.radio_button :is_mortal, false %>
+
+  <%= f.label :img_url, "Enter a URL for this figure's featured image." %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :allegiance %>
+  <%= f.text_field :allegiance %>
+
+  <%= f.submit "Edit #{@figure.name}"%>
+<% end %>

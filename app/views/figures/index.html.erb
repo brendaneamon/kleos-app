@@ -2,7 +2,7 @@
 
 <% @figures.each do |figure| %>
   <div class="figure">
-    <h3><%= figure.name %></h3>
+    <h3><%= link_to figure.name, figure %></h3>
     <p><%= figure.greek_name %></p>
   </div>
 <% end %>
