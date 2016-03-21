@@ -1,1 +1,18 @@
 <h2>Create a New Home</h2>
+
+<%= form_for @home do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :greek_name %>
+  <%= f.text_field :greek_name %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :img_url, "Enter a URL for this place's featured image." %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit "Create New Home Location"%>
+<% end %>
