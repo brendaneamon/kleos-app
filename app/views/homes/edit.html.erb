@@ -1,1 +1,20 @@
-<h2>Edit a Home</h2>
+<h2>Edit <%= @home.name %></h2>
+
+<%= form_for @home do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :greek_name %>
+  <%= f.text_field :greek_name %>
+
+  <%= f.label :description, "Enter a description for #{@home.name}" %>
+  <%= f.text_area :description %>
+
+  <%= f.label :img_url, "Enter a URL for the featured image for #{@home.name}." %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit "Edit #{@home.name}"%>
+<% end %>
+
+<h2>Delete <%= @home.name%>?</h2>
