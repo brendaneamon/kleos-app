@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160321152809) do
+ActiveRecord::Schema.define(version: 20160321185717) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160321152809) do
     t.boolean "is_mortal"
     t.string  "img_url"
     t.integer "home_id"
+    t.string  "allegiance"
   end
 
   create_table "homes", force: :cascade do |t|

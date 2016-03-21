@@ -9,12 +9,13 @@
 <body>
   <nav>
     <h1>Major Figures and Locations in Homer's <em>Iliad</em></h1>
+    <h2><%= link_to "View Figures", figures_path %> | <%= link_to "View Homes", homes_path %> | <%= link_to "Add New Figure", new_figure_path %> | <%= link_to "Add New Home", new_home_path %></h2>
   </nav>
 
 <%= yield %>
 
   <footer>
-
+    <h2>Footer content goes here</h2>
   </footer>
 </body>
 </html>
