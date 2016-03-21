@@ -1,1 +1,8 @@
 <h2>Figures in Homer's <em>Iliad</em></h2>
+
+<% @figures.each do |figure| %>
+  <div class="figure">
+    <h3><%= figure.name %></h3>
+    <p><%= figure.greek_name %></p>
+  </div>
+<% end %>
