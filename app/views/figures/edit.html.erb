@@ -14,7 +14,7 @@
   <%= f.label :description %>
   <%= f.text_area :description %>
 
-  <%= f.label :is_mortal, "Is the character mortal?"%><br />
+  <%= f.label :is_mortal, "Is #{@figure.name} mortal?"%><br />
   <%= f.label :is_mortal, "Yes", :value => "true"  %>
   <%= f.radio_button :is_mortal, true %>
   <%= f.label :is_mortal, "No", :value => "false" %>
