@@ -1,8 +1,10 @@
 <h2>Homes of Major Figures</h2>
-
+<div class="container">
 <% @homes.each do |home| %>
   <div class="home">
     <h3><%= link_to home.name, home %></h3>
     <p><%= home.greek_name %></p>
+    <%= image_tag home.img_url, class: "img-small" %>
   </div>
 <% end %>
+</div>

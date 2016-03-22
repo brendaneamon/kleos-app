@@ -1,3 +1,44 @@
+body {
+background-color: #d2e5d4;
+}
+
+nav {
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.figure {
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 20px;
+  max-width: 700px;
+  font-size: 2em;
+}
+
+.home {
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 20px
+  max-width: 700px;
+  font-size: 2em;
+}
+
+.img-small {
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.img-large {
+  max-width: 800px;
+}
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

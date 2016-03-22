@@ -1,8 +1,10 @@
 <h2>Figures in Homer's <em>Iliad</em></h2>
-
+<div class="container">
 <% @figures.each do |figure| %>
   <div class="figure">
     <h3><%= link_to figure.name, figure %></h3>
     <p><%= figure.greek_name %></p>
+    <%= image_tag figure.img_url, class: "img-small" %>
   </div>
 <% end %>
+</div>
