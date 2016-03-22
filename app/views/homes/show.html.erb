@@ -1,13 +1,14 @@
 <h2><%= @home.name %> <%= link_to"(edit)", edit_home_path(@home)%></h2>
 
-<div class="show-home">
+<div class="show">
   <h3><%= @home.greek_name %></h3>
   <p>Description: <%= @home.description %></p>
-  <%= image_tag @home.img_url, class: "home-photo" %>
+  <%= image_tag @home.img_url, class: "img-large" %>
 </div>
 
   <% @home.figures.each do |figure| %>
   <div class="home-show-figures">
-    <%= link_to "#{figure.name}", figure %>
+    <p><%= link_to "#{figure.name}", figure %></p>
+    <p><%= image_tag figure.img_url, class: "img-small" %></p>
   </div>
   <% end %>
