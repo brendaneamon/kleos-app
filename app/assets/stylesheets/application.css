@@ -56,7 +56,7 @@ nav a:hover {
   text-decoration: #000000;
 }
 
-.figure, .divine-figure {
+.figure {
   text-align: center;
   border: 1px solid #000000;
   border-radius: 20px;
@@ -64,6 +64,16 @@ nav a:hover {
   padding: 20px;
   max-width: 600px;
   font-size: 2em;
+}
+
+.figure a, .home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.figure a:hover, .home a:hover {
+  color:#808080;
+  text-decoration: underline;
 }
 
 .figure:hover {
@@ -77,6 +87,7 @@ nav a:hover {
 .home {
   text-align: center;
   border: 1px solid #000000;
+  border-radius: 20px;
   margin: 10px;
   padding: 20px;
   max-width: 600px;
@@ -90,8 +101,10 @@ nav a:hover {
 .img-small {
   max-width: 400px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .img-large {
   max-width: 800px;
+  border-radius: 5px;
 }
