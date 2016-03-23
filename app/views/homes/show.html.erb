@@ -1,14 +1,18 @@
-<h2 class="view-header"><%= @home.name %> <%= link_to("(edit)", edit_home_path(@home)) if current_user %></h2></h2>
+<h2 class="view-header"><%= @home.name %> <%= link_to("(edit)", edit_home_path(@home)) if current_user %></h2>
 
 <div class="show-container">
-  <h3><%= @home.greek_name %></h3>
-  <p>Description: <%= @home.description %></p>
-  <%= image_tag @home.img_url, class: "img-large" %>
-</div>
-
-  <% @home.figures.each do |figure| %>
-  <div class="home-figures">
-    <p><%= link_to "#{figure.name}", figure %></p>
-    <%= image_tag figure.img_url, class: "img-small" %>
+  <div class="show-details">
+    <h3><%= @home.greek_name %></h3>
+    <p>Description: <%= @home.description %></p>
+    <%= image_tag @home.img_url, class: "img-large" %>
   </div>
-  <% end %>
+
+  <div class="home-figures">
+    <% @home.figures.each do |figure| %>
+    <div>
+      <p><%= link_to "#{figure.name}", figure %></p>
+      <%= image_tag figure.img_url, class: "img-small" %>
+    </div>
+    <% end %>
+  </div>
+</div>

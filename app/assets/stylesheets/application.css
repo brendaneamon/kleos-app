@@ -7,7 +7,7 @@ nav {
   color: #ffffff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   background-color: #990024;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #fff;
   border-radius: 5px;
   padding: 5px;
   font-family: Georgia, serif;
@@ -61,6 +61,11 @@ nav a:hover {
 }
 
 .show-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.show-details {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,9 +136,22 @@ nav a:hover {
   padding: 10px;
 }
 
-.figure-home a{
+.figure-home a {
   text-decoration: none;
   color: inherit;
+}
+
+.home-figures {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.home-figures div {
+  margin: 15px auto;
 }
 
 .img-small {

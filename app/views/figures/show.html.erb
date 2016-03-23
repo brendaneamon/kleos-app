@@ -1,15 +1,17 @@
 <h2 class= "view-header"><%= @figure.name %> <%= link_to("(edit)", edit_figure_path(@figure)) if current_user %></h2>
 
 <div class="show-container">
-  <h3><%= @figure.greek_name %></h3>
-  <p>Epithets: <em><%= @figure.epithets %></em></p>
-  <p>Description: <%= @figure.description %></p>
-  <p>Allegiance: <%= @figure.allegiance %></p>
-  <%= image_tag @figure.img_url, class: "img-large" %>
-</div>
+  <div class="show-details">
+    <h3><%= @figure.greek_name %></h3>
+    <p>Epithets: <em><%= @figure.epithets %></em></p>
+    <p>Description: <%= @figure.description %></p>
+    <p>Allegiance: <%= @figure.allegiance %></p>
+    <%= image_tag @figure.img_url, class: "img-large" %>
+  </div>
 
-<div class="figure-home">
-  <h3>The Home of <%= @figure.name%></h3>
-  <p><%= link_to @figure.home.name, @figure.home %></p>
-  <%= image_tag @figure.home.img_url, class: "img-small" %>
+  <div class="figure-home">
+    <h3>The Home of <%= @figure.name%></h3>
+    <p><%= link_to @figure.home.name, @figure.home %></p>
+    <%= image_tag @figure.home.img_url, class: "img-small" %>
+  </div>
 </div>
