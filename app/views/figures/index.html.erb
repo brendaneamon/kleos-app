@@ -1,4 +1,4 @@
-<h2 class="view-header">Figures in Homer's <em>Iliad</em> <%= link_to("(Add New Figure)", new_figure_path) if current_user %></h2>
+<h2 class="view-header">Gods, Heroes, and Heroines <%= link_to("(add new)", new_figure_path) if current_user %></h2>
 <div class="index-container">
 <% @figures.each do |figure| %>
   <% if figure.is_mortal %>
