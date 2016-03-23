@@ -2,34 +2,52 @@
 <div class="form-container">
 <%= form_for @figure do |f| %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <div class="form-field">
+    <p><%= f.label :name %></p>
+    <%= f.text_field :name %>
+  </div>
 
-  <%= f.label :greek_name %>
-  <%= f.text_field :greek_name %>
+  <div class="form-field">
+    <p><%= f.label :greek_name %></p>
+    <%= f.text_field :greek_name %>
+  </div>
 
-  <%= f.label :epithets %>
-  <%= f.text_area :epithets %>
+  <div class="form-field">
+    <p><%= f.label :epithets %></p>
+    <%= f.text_area :epithets %>
+  </div>
 
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+  <div class="form-field">
+    <p><%= f.label :description %></p>
+    <%= f.text_area :description %>
+  </div>
 
-  <%= f.label :is_mortal, "Is #{@figure.name} mortal?"%><br />
-  <%= f.label :is_mortal, "Yes", :value => "true"  %>
-  <%= f.radio_button :is_mortal, true %>
-  <%= f.label :is_mortal, "No", :value => "false" %>
-  <%= f.radio_button :is_mortal, false %>
+  <div class="form-field">
+    <p><%= f.label :is_mortal, "Is #{@figure.name} mortal?"%></p>
+    <%= f.label :is_mortal, "Yes", :value => "true"  %>
+    <%= f.radio_button :is_mortal, true %>
+    <%= f.label :is_mortal, "No", :value => "false" %>
+    <%= f.radio_button :is_mortal, false %>
+  </div>
 
-  <%= f.label :img_url, "Enter a URL for this figure's featured image." %>
-  <%= f.text_field :img_url %>
+  <div class="form-field">
+    <p><%= f.label :img_url, "Enter a URL for #{@figure.name}'s featured image." %></p>
+    <%= f.text_field :img_url %>
+  </div>
 
-  <%= f.label :allegiance %>
-  <%= f.text_field :allegiance %>
+  <div class="form-field">
+    <p><%= f.label :allegiance %></p>
+    <%= f.text_field :allegiance %>
+  </div>
 
-  <%= f.label :home_id, "Select a home for #{@figure.name}." %>
-  <%= f.collection_select :home_id, Home.all, :id, :name %>
+  <div class="form-field">
+    <p><%= f.label :home_id, "Select a home for #{@figure.name}." %></p>
+    <%= f.collection_select :home_id, Home.all, :id, :name %>
+  </div>
 
-  <%= f.submit "Update #{@figure.name}"%>
+  <div class="form-field">
+    <p><%= f.submit "Update #{@figure.name}"%></p>
+  </div>
 <% end %>
 </div>
 
