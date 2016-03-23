@@ -11,7 +11,16 @@
   <p class="alert"><%= alert %></p>
   <nav>
     <h1>Major Figures and Locations in Homer's <em>Iliad</em></h1>
-    <h2><%= link_to "View Figures", figures_path %> | <%= link_to "View Homes", homes_path %> | <%= link_to "Add New Figure", new_figure_path %> | <%= link_to "Add New Home", new_home_path %></h2>
+    <h2><%= link_to "View Figures", figures_path %> | <%= link_to "View Homes", homes_path %> |
+    <% if !current_user %>
+      <%= link_to "Sign Up", new_user_registration_path %> |
+      <%= link_to "Sign In", new_user_session_path %>
+    <% else %>
+      <%= link_to "Log Out, #{current_user.email}", destroy_user_session_path, method: :delete %>
+    <% end %>
+    </h2>
+    <h2> <%= link_to("Add New Figure", new_figure_path) if current_user %> </h2>
+    <h2><%= link_to("Add New Home", new_home_path) if current_user %></h2>
   </nav>
 
 <%= yield %>

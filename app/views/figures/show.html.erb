@@ -1,4 +1,4 @@
-<h2 class= "view-header"><%= @figure.name %> <%= link_to"(edit)", edit_figure_path(@figure)%></h2>
+<h2 class= "view-header"><%= @figure.name %> <%= link_to("(edit)", edit_figure_path(@figure)) if current_user %></h2>
 
 <div class="show">
   <h3><%= @figure.greek_name %></h3>
