@@ -62,7 +62,8 @@ nav a:hover {
 
 .show-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .show-details {
