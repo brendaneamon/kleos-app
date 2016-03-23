@@ -7,6 +7,14 @@ nav {
   border-bottom: 2px solid #000000;
   padding: 5px;
   font-family: Georgia, serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav h1 {
+  font-size: 3em;
 }
 
 nav a {
@@ -15,7 +23,7 @@ nav a {
 
 .view-header {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .index-container {
