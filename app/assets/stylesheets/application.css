@@ -63,7 +63,13 @@ nav a:hover {
 .show-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.show-container h3 {
+  font-size: 2em;
 }
 
 .show-details {
@@ -144,7 +150,8 @@ nav a:hover {
 
 .home-figures {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content:
   margin: 20px auto;
   padding: 20px;
   border: 2px solid #fff;

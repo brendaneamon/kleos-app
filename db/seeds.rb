@@ -8,15 +8,12 @@
 
 Figure.destroy_all
 Home.destroy_all
-User.destroy_all
 
 olympus = Home.create(name:"Olympus", greek_name:"Ὄλυμπος", description:"Home of the gods", img_url:"http://i.imgur.com/l7pffPO.jpg")
 phthia = Home.create(name:"Phthia", greek_name:"Φθία", description:"Homeland of the Myrmidons", img_url:"http://i.imgur.com/xtxr9Sq.jpg")
 pylos = Home.create(name:"Pylos", greek_name:"Πύλος", description:"Home of Nestor", img_url:"http://i.imgur.com/MATq2P8.jpg")
 troy = Home.create(name:"Troy", greek_name:"Τροία ἤ Ἴλιον", description:"Home of the Trojans, also known as Ilium", img_url:"http://i.imgur.com/V1zcrrc.jpg")
 sparta = Home.create(name:"Sparta", greek_name:"Σπάρτα ἤ Λακεδαίμων", description:"City from which Helen was abducted by Paris", img_url:"http://i.imgur.com/OPhPx3g.jpg")
-
-User.create(email:"admin@iliad.info", password: "admin")
 
 Figure.create(name:"Achilles", greek_name:"Ἀχιλλεύς", epithets:"swift-footed, godlike, lion-hearted", description:"Best of the Achaeans", is_mortal:true, img_url:"http://i.imgur.com/d7kEyQJ.jpg", home:phthia, allegiance:"Greeks")
 Figure.create(name:"Zeus", greek_name:"Ζεύς", epithets:"cloud-gatherer, wide-seeing, Aegis-holding", description:"King of the gods", is_mortal:false, img_url:"http://i.imgur.com/kBxan28.jpg", home:olympus, allegiance:"Neutral")
