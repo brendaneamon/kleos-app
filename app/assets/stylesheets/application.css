@@ -60,6 +60,12 @@ nav a:hover {
   flex-flow: row wrap;
 }
 
+.show-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-container {
   font-family: Georgia, serif;
   font-size: 1.5em;
@@ -111,6 +117,23 @@ nav a:hover {
 .home:hover {
   background-color: #ff0000;
   transition: 0.5s;
+}
+
+.figure-home {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.figure-home a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .img-small {
