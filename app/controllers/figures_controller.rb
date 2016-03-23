@@ -5,10 +5,12 @@ class FiguresController < ApplicationController
   end
 
   def new
+    redirect_to root_url unless current_user
     @figure = Figure.new
   end
 
   def create
+    redirect_to root_url unless current_user
     @figure = Figure.create!(figure_params)
     redirect_to figure_url(@figure)
   end
@@ -18,10 +20,12 @@ class FiguresController < ApplicationController
   end
 
   def edit
+    redirect_to root_url unless current_user
     @figure = Figure.find(params[:id])
   end
 
   def update
+    redirect_to root_url unless current_user
     @figure = Figure.find(params[:id])
     @figure.update(figure_params)
 
@@ -29,6 +33,7 @@ class FiguresController < ApplicationController
   end
 
   def destroy
+    redirect_to root_url unless current_user
     @figure = Figure.find(params[:id])
     @figure.destroy
 
