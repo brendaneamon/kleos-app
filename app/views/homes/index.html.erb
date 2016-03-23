@@ -1,4 +1,4 @@
-<h2 class="view-header">Homes of Major Figures</h2>
+<h2 class="view-header">Homes of Major Figures <%= link_to("(Add New Home)", new_home_path) if current_user %></h2>
 <div class="index-container">
 <% @homes.each do |home| %>
   <div class="home">
