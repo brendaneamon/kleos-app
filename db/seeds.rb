@@ -8,6 +8,9 @@
 
 Figure.destroy_all
 Home.destroy_all
+User.destroy_all
+
+User.create(email:"admin@iliad.info", password:"administrator")
 
 olympus = Home.create(name:"Olympus", greek_name:"Ὄλυμπος", description:"Home of the gods", img_url:"http://i.imgur.com/l7pffPO.jpg")
 phthia = Home.create(name:"Phthia", greek_name:"Φθία", description:"Homeland of the Myrmidons", img_url:"http://i.imgur.com/xtxr9Sq.jpg")
