@@ -1,5 +1,5 @@
-<h2>Edit <%= @figure.name %></h2>
-
+<h2 class="view-header">Edit <%= @figure.name %></h2>
+<div class="form-container">
 <%= form_for @figure do |f| %>
 
   <%= f.label :name %>
@@ -31,7 +31,8 @@
 
   <%= f.submit "Update #{@figure.name}"%>
 <% end %>
+</div>
 
-<h2>Delete <%= @figure.name%>?</h2>
+<h2 class="delete">Delete <%= @figure.name%>?</h2>
 
-<%= button_to "Delete #{@figure.name}", @figure, method: :delete, class: "delete" %>
+<%= button_to "Delete #{@figure.name}", @figure, method: :delete, class: "delete-button" %>

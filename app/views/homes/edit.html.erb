@@ -1,5 +1,6 @@
-<h2>Edit <%= @home.name %></h2>
+<h2 class = "view-header">Edit <%= @home.name %></h2>
 
+<div class="form-container">
 <%= form_for @home do |f| %>
 
   <%= f.label :name %>
@@ -16,6 +17,7 @@
 
   <%= f.submit "Update #{@home.name}"%>
 <% end %>
+</div>
 
 <h2>Delete <%= @home.name%>?</h2>
 
