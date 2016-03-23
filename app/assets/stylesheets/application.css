@@ -28,6 +28,15 @@ nav a {
 
 nav a:hover {
   color: #008000;
+  transition: 0.5s;
+}
+
+.notice {
+  text-align: center;
+  font-size: 2em;
+  font-family: inherit;
+  background-color: #05b8cc;
+  text-transform: uppercase;
 }
 
 .view-header {
@@ -86,18 +95,22 @@ nav a:hover {
 
 .figure a:hover, .home a:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .figure:hover {
   background-color: #ff0000;
+  transition: 0.5s;
 }
 
 .divine:hover {
-  background-color: #2096ba;
+  background-color: #0D4F8B;
+  transition: 0.5s;
 }
 
 .home:hover {
   background-color: #ff0000;
+  transition: 0.5s;
 }
 
 .img-small {
