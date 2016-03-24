@@ -78,13 +78,9 @@ nav a:hover {
   align-items: center;
 }
 
-.page-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .form-container {
   font-family: Georgia, serif;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,20 +92,8 @@ nav a:hover {
   border-radius: 3px;
 }
 
-.form-field > * {
-  font-size: 1.5em;
-}
-
-.delete-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  color: red;
-  font-size: 1.5em;
-}
-
-.delete-container > * {
-  font-size: 1.5em;
+.delete {
+  text-decoration: #000000;
 }
 
 .figure, .home {

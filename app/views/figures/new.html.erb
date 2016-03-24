@@ -3,33 +3,51 @@
 <div class="form-container">
 <%= form_for @figure do |f| %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <div class="form-field">
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+  </div>
 
-  <%= f.label :greek_name %>
-  <%= f.text_field :greek_name %>
+  <div class="form-field">
+    <%= f.label :greek_name, "What is the character's name in Greek?" %>
+    <%= f.text_field :greek_name %>
+  </div>
 
-  <%= f.label :epithets %>
-  <%= f.text_area :epithets %>
+  <div class="form-field">
+    <%= f.label :epithets, "List the Homeric epithets for this character:" %>
+    <%= f.text_area :epithets %>
+  </div>
 
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+  <div class="form-field">
+    <%= f.label :description, "Provide a description of the character:" %>
+    <%= f.text_area :description %>
+  </div>
 
-  <%= f.label :is_mortal, "Is the character mortal?"%><br />
-  <%= f.label :is_mortal, "Yes", :value => "true"  %>
-  <%= f.radio_button :is_mortal, true %>
-  <%= f.label :is_mortal, "No", :value => "false" %>
-  <%= f.radio_button :is_mortal, false %>
+  <div class="form-field">
+    <%= f.label :is_mortal, "Is the figure mortal?"%>
+    <%= f.label :is_mortal, "Yes", :value => "true"  %>
+    <%= f.radio_button :is_mortal, true %>
+    <%= f.label :is_mortal, "No", :value => "false" %>
+    <%= f.radio_button :is_mortal, false %>
+  </div>
 
-  <%= f.label :img_url, "Enter a URL for this figure's featured image." %>
-  <%= f.text_field :img_url %>
+  <div class="form-field">
+    <%= f.label :img_url, "Enter a URL for the figure's featured image:" %>
+    <%= f.text_field :img_url %>
+  </div>
 
-  <%= f.label :allegiance %>
-  <%= f.text_field :allegiance %>
+  <div class="form-field">
+    <%= f.label :allegiance, "Enter an allegiance for the figure:" %>
+    <%= f.text_field :allegiance %>
+  </div>
 
-  <%= f.label :home_id, "Select a home for this new figure." %>
-  <%= f.collection_select :home_id, Home.all, :id, :name %>
+  <div class="form-field">
+    <%= f.label :home_id, "Select a home for this figure:" %>
+    <%= f.collection_select :home_id, Home.all, :id, :name %>
+  </div>
 
-  <%= f.submit "Create New Figure"%>
+  <div class="form-field">
+    <%= f.submit "Add New Figure"%>
+  </div>
 <% end %>
 </div>

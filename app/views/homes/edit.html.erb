@@ -1,24 +1,37 @@
 <h2 class = "view-header">Edit <%= @home.name %></h2>
 
-<div class="form-container">
-<%= form_for @home do |f| %>
+<div class="page-container">
+  <div class="form-container">
+  <%= form_for @home do |f| %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+    <div class="form-field">
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+    </div>
 
-  <%= f.label :greek_name %>
-  <%= f.text_field :greek_name %>
+    <div class="form-field">
+    <%= f.label :greek_name, "The name of #{@home.name} in Greek:" %>
+    <%= f.text_field :greek_name %>
+    </div>
 
-  <%= f.label :description, "Enter a description for #{@home.name}" %>
-  <%= f.text_area :description %>
+    <div class="form-field">
+    <%= f.label :description, "Update the description for #{@home.name}:" %>
+    <%= f.text_area :description %>
+    </div>
 
-  <%= f.label :img_url, "Enter a URL for the featured image for #{@home.name}." %>
-  <%= f.text_field :img_url %>
+    <div class="form-field">
+    <%= f.label :img_url, "Update the URL for the featured image for #{@home.name}:" %>
+    <%= f.text_field :img_url %>
+    </div>
 
-  <%= f.submit "Update #{@home.name}"%>
-<% end %>
+    <div class="form-field">
+    <%= f.submit "Update #{@home.name}"%>
+    </div>
+  <% end %>
+  </div>
+
+  <div class="delete-container">
+    <div>Delete <%= @home.name%>?</div>
+    <%= button_to "Delete #{@home.name}", @home, method: :delete, class: "delete" %>
+  </div>
 </div>
-
-<h2>Delete <%= @home.name%>?</h2>
-
-<%= button_to "Delete #{@home.name}", @home, method: :delete, class: "delete" %>

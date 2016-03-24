@@ -1,18 +1,30 @@
 <h2 class="view-header">Create a New Home</h2>
 
+<div class="form-container">
 <%= form_for @home do |f| %>
 
-  <%= f.label :name %>
+  <div class="form-field">
+  <%= f.label :name, "Name:" %>
   <%= f.text_field :name %>
+  </div>
 
-  <%= f.label :greek_name %>
+  <div class="form-field">
+  <%= f.label :greek_name, "What is the place's name in Greek?" %>
   <%= f.text_field :greek_name %>
+  </div>
 
-  <%= f.label :description, "Enter a description for this place." %>
+  <div class="form-field">
+  <%= f.label :description, "Enter a description for the new place:" %>
   <%= f.text_area :description %>
+  </div>
 
-  <%= f.label :img_url, "Enter a URL for this place's featured image." %>
+  <div class="form-field">
+  <%= f.label :img_url, "Enter a URL for the featured image for this place:" %>
   <%= f.text_field :img_url %>
+  </div>
 
-  <%= f.submit "Create New Home Location"%>
+  <div class="form-field">
+  <%= f.submit "Add New Home"%>
+  </div>
 <% end %>
+</div>

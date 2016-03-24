@@ -1,56 +1,60 @@
 <h2 class="view-header">Edit <%= @figure.name %></h2>
-<div class="form-container">
-<%= form_for @figure do |f| %>
 
-  <div class="form-field">
-    <p><%= f.label :name %></p>
-    <%= f.text_field :name %>
+<div class="page-container">
+  <div class="form-container">
+  <%= form_for @figure do |f| %>
+
+    <div class="form-field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :greek_name, "The name of #{@figure.name} in Greek:" %>
+      <%= f.text_field :greek_name %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :epithets, "Edit the Homeric epithets of #{@figure.name}:" %>
+      <%= f.text_area :epithets %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :description, "Edit the description for #{@figure.name}:" %>
+      <%= f.text_area :description %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :is_mortal, "Is #{@figure.name} mortal?"%>
+      <%= f.label :is_mortal, "Yes", :value => "true"  %>
+      <%= f.radio_button :is_mortal, true %>
+      <%= f.label :is_mortal, "No", :value => "false" %>
+      <%= f.radio_button :is_mortal, false %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :img_url, "Enter a URL for #{@figure.name}'s featured image." %>
+      <%= f.text_field :img_url %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :allegiance %>
+      <%= f.text_field :allegiance %>
+    </div>
+
+    <div class="form-field">
+      <%= f.label :home_id, "Select a home for #{@figure.name}." %>
+      <%= f.collection_select :home_id, Home.all, :id, :name %>
+    </div>
+
+    <div class="form-field">
+      <%= f.submit "Update #{@figure.name}"%>
+    </div>
+  <% end %>
   </div>
 
-  <div class="form-field">
-    <p><%= f.label :greek_name %></p>
-    <%= f.text_field :greek_name %>
+  <div class="delete-container">
+    <div>Delete <%= @figure.name%>?</div>
+    <%= button_to "Delete #{@figure.name}", @figure, method: :delete, class: "delete-button" %>
   </div>
-
-  <div class="form-field">
-    <p><%= f.label :epithets %></p>
-    <%= f.text_area :epithets %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.label :description %></p>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.label :is_mortal, "Is #{@figure.name} mortal?"%></p>
-    <%= f.label :is_mortal, "Yes", :value => "true"  %>
-    <%= f.radio_button :is_mortal, true %>
-    <%= f.label :is_mortal, "No", :value => "false" %>
-    <%= f.radio_button :is_mortal, false %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.label :img_url, "Enter a URL for #{@figure.name}'s featured image." %></p>
-    <%= f.text_field :img_url %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.label :allegiance %></p>
-    <%= f.text_field :allegiance %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.label :home_id, "Select a home for #{@figure.name}." %></p>
-    <%= f.collection_select :home_id, Home.all, :id, :name %>
-  </div>
-
-  <div class="form-field">
-    <p><%= f.submit "Update #{@figure.name}"%></p>
-  </div>
-<% end %>
 </div>
-
-<h2 class="delete">Delete <%= @figure.name%>?</h2>
-
-<%= button_to "Delete #{@figure.name}", @figure, method: :delete, class: "delete-button" %>

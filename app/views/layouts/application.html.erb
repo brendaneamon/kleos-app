@@ -11,7 +11,6 @@
     <h1><strong><em>Kleos</em> App</strong> – Who's Who in Homer's <em>Iliad</em></h1>
     <h2><%= link_to "Mortal and Divine Figures", figures_path %> | <%= link_to "Cities and Kingdoms", homes_path %> |
     <% if !current_user %>
-      <%= link_to "Sign Up", new_user_registration_path %> |
       <%= link_to "Log In", new_user_session_path %>
     <% else %>
       <%= link_to "Log Out #{current_user.email}", destroy_user_session_path, method: :delete %>
