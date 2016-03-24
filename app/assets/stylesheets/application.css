@@ -42,7 +42,7 @@ nav a:hover {
 .view-header {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .view-header a {
@@ -65,11 +65,12 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   margin: 20px auto;
-  padding: 15px;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 .show-container h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .show-details {
