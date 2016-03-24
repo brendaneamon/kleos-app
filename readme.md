@@ -54,7 +54,7 @@ After user authentication via Devise was in place, I spent most of my time styli
 Unsolved Problems
 -----------------
 
-The most obvious unsolved problem is more of a "room for improvement" than true difficult: styling. I expect to continue to make incremental improvements to the CSS for the app, and I will also investigate utilizing bootstrap to ensure a seamless experience for users across platforms (especially important given the high rate of mobile device adoption by the target demographic for the app).
+The most obvious unsolved problem is more of a "room for improvement" than true difficulty: styling. I expect to continue to make incremental improvements to the CSS for the app, and I will also investigate utilizing bootstrap to ensure a seamless experience for users across platforms (especially important given the high rate of mobile device adoption by the target demographic for the app).
 
 I also had some difficulty implementing partially nested routes, but I managed to work around this by forcing the authenticated user to select a pre-existing "home" for any new figures created.
 
