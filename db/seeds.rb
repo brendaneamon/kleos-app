@@ -23,5 +23,5 @@ Figure.create(name:"Zeus", greek_name:"Ζεύς", epithets:"cloud-gatherer, wide
 Figure.create(name:"Nestor", greek_name:"Νέστωρ Γερήνιος", epithets:"son of Neleus, Gerenian charioteer",
 description:"King of Pylos", is_mortal:true, img_url:"http://i.imgur.com/rpkngjH.jpg", home:pylos, allegiance:"Greeks")
 Figure.create(name:"Hector", greek_name:"Ἕκτωρ", epithets:"man-killing, horse-taming", description:"Greatest champion of the Trojans", is_mortal: true, img_url:"http://i.imgur.com/9i5OuD4.jpg", home:troy, allegiance:"Trojans")
-Figure.create(name:"Menelaus", greek_name:"Μενέλαος", epithets:"war-like, red-haired", description:"King of the Lacedaimonians and husband of Helen", is_mortal: true, img_url:"http://i.imgur.com/YlpPZBP.jpg", home:sparta, allegiance:"Greeks")
+Figure.create(name:"Menelaus", greek_name:"Μενέλαος", epithets:"war-like, red-haired", description:"King of the Lakedaimonians and husband of Helen", is_mortal: true, img_url:"http://i.imgur.com/YlpPZBP.jpg", home:sparta, allegiance:"Greeks")
 Figure.create(name:"Poseidon", greek_name:"Ποσειδῶν", epithets:"earth-shaker, earth-moving", description:"God of the sea and of earthquakes", is_mortal: false, img_url:"http://i.imgur.com/yEIl2UT.jpg", home:olympus, allegiance:"Greeks")
