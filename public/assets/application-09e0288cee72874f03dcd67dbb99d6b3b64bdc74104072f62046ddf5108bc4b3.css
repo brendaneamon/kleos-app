@@ -1,0 +1,182 @@
+body {
+background-color: #000000;
+color: #ffffff;
+}
+
+nav {
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: #990024;
+  border-bottom: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Georgia, serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav h1 {
+  font-size: 3em;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #008000;
+  transition: 0.5s;
+}
+
+.notice {
+  text-align: center;
+  font-size: 2em;
+  font-family: inherit;
+  background-color: #05b8cc;
+  text-transform: uppercase;
+}
+
+.view-header {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.view-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.view-header a:hover {
+  padding-bottom: 5px;
+  border-bottom: 4px solid #ffffff;
+}
+
+.index-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.show-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.show-container h3 {
+  font-size: 1.5em;
+}
+
+.show-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form-container {
+  font-family: Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field {
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.form-field > * {
+  font-size: 1.5em;
+}
+
+.delete-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: red;
+  font-size: 1.5em;
+}
+
+.delete-container > * {
+  font-size: 1.5em;
+}
+
+.figure, .home {
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 600px;
+  font-size: 2em;
+}
+
+.figure a, .home a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.figure a:hover, .home a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.figure:hover {
+  background-color: #ff0000;
+  transition: 0.5s;
+}
+
+.divine:hover {
+  background-color: #0D4F8B;
+  transition: 0.5s;
+}
+
+.home:hover {
+  background-color: #ff0000;
+  transition: 0.5s;
+}
+
+.figure-home, .home-figures {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.figure-home a, .home-figures a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.figure-home a:hover, .home-figures a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.img-small {
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-large {
+  max-width: 800px;
+  border-radius: 5px;
+}
