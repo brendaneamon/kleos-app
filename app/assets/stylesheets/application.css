@@ -148,7 +148,7 @@ nav a:hover {
   transition: 0.5s;
 }
 
-.figure-home {
+.figure-home, .home-figures {
   color: inherit;
   display: flex;
   flex-direction: column;
@@ -160,23 +160,14 @@ nav a:hover {
   padding: 10px;
 }
 
-.figure-home a {
+.figure-home a, .home-figures a {
   text-decoration: none;
   color: inherit;
 }
 
-.home-figures {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #fff;
-  border-radius: 20px;
-}
-
-.home-figures div {
-  margin: 15px auto;
+.figure-home a:hover, .home-figures a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 .img-small {
