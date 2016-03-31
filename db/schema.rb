@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160323165257) do
   enable_extension "plpgsql"
 
   create_table "figures", force: :cascade do |t|
+    # AM: +1 database restrictions.
     t.string  "name",        null: false
     t.string  "greek_name",  null: false
     t.text    "epithets"

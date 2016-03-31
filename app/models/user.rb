@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  # AM: +1 Devise integration.
   has_many :figures
   has_many :homes
   # Include default devise modules. Others available are:
