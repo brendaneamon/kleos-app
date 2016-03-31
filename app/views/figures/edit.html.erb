@@ -26,6 +26,10 @@
 
     <div class="form-field">
       <%= f.label :is_mortal, "Is #{@figure.name} mortal?"%>
+      <!-- AM: The radio buttons seems to work when I remove `:value => boolean` from their labels. -->
+      <!-- AM: Is there a reason why you included boolean values for both the labels and buttons? -->
+      <!-- AM: (I also don't now too much about radio buttons in Rails, so this is an opportunity to educate me!) -->
+
       <%= f.label :is_mortal, "Yes", :value => "true"  %>
       <%= f.radio_button :is_mortal, true %>
       <%= f.label :is_mortal, "No", :value => "false" %>
@@ -44,6 +48,7 @@
 
     <div class="form-field">
       <%= f.label :home_id, "Select a home for #{@figure.name}." %>
+      <!-- AM: Like that you're using a variety of inputs in this app. -->
       <%= f.collection_select :home_id, Home.all, :id, :name %>
     </div>
 

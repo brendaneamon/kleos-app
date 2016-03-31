@@ -5,6 +5,7 @@ class FiguresController < ApplicationController
   end
 
   def new
+    # AM: Nice! Looks like you implemented some logic in the view so that (hopefully) users would never be able to get to the create/edit forms in the first place.
     redirect_to root_url unless current_user
     @figure = Figure.new
   end
