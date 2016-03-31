@@ -15,7 +15,7 @@
 
 **Excelling.** Again, great job. You code was very well-organized and readable. A next step here today could be to extract logic out of the view, particularly with user authorization. Look into the CanCanCan gem, or perhaps creating helper methods that determine whether something is visible based on if a user (or the **correct** user) is logged in.
 
-Also left some inline code comments. Make sure to take a look at them in this [pull request]().
+Also left some inline code comments. Make sure to take a look at them in this [pull request](https://github.com/brendaneamon/kleos-app/pull/1).
 
 ## Deployment and Functionality
 
